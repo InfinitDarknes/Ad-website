@@ -1,0 +1,227 @@
+
+@font-face{
+    font-family: vazir;
+    src: url(../Fonts/vazir-font-v27.2.2-Fontjo.com/Vazir-Black.ttf) format(truetype);
+}
+
+@font-face{
+    font-family: yekan;
+    src: url(../Fonts/B_Yekan/Yekan.ttf) format(truetype);
+}
+
+*{
+    transition: color .5s , background-color .5s , filter .5s , transform 1s , font-size .5s , rotate .5s;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+    height: 98vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(270deg , rgb(8, 62, 224) , rgb(46, 89, 221) ,rgb(50, 93, 224));
+}
+
+a{
+    text-decoration: none;
+    /* color: royalblue; */
+    font-family: yekan;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+a:hover{
+    color: goldenrod;
+}
+
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.login-form-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+}
+
+.login-form{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 90%;
+}
+
+input::placeholder{
+    font-family: yekan;
+}
+
+input[type="email"],input[type="password"]{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background-color: rgb(240, 238, 238);
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    font-size: 18px;
+}
+
+input[type="submit"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto 15px auto;
+    width: 250px;
+    height: 35px;
+    border: 0;
+    border-radius: 20px;
+    background-color: royalblue;
+    font-size: 20px;
+    font-family: yekan;
+}
+
+
+label{
+    color: royalblue;
+    font-size: 20px;
+    font-family: vazir;
+    margin-left: 5%;
+}
+
+.login-form a{
+    margin: auto !important;
+    font-size: 18px;
+    font-family: yekan;
+    text-align: center;
+    color: #0066CC;
+}
+
+span{
+    font-weight: 300;
+    display: block;
+}
+
+.descryption span{
+        font-family: yekan;
+}
+
+
+input[type="submit"]:hover{
+    background-color: goldenrod;
+}
+
+li{
+    list-style-position: inside;
+}
+
+i{
+    color: gray;
+    vertical-align: middle;
+    padding-left: 8px;
+}
+
+i:hover{
+    color: royalblue;
+}
+
+img{
+    cursor:zoom-in;
+}
+
+button,li,a,input[type="submit"]{
+    cursor: pointer;
+}
+
+.text{
+    font-family: yekan;
+}
+
+.brand{
+    color: goldenrod;
+    font-family: vazir;
+}
+
+.title{
+    color: orangered;
+    font-family: vazir;
+}
+.logo-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-bottom: 3px solid lightgray;
+    margin: 5px auto 40px auto;
+}
+
+.logo-title{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.fa-title{
+    font-size: 50px;
+    text-align: center;
+    height: fit-content;
+}
+.en-title{
+    font-family: monospace;
+    font-size: 18px;
+    text-align: center;
+}
+
+.logo-container #login-text {
+    position: absolute;
+    bottom: -27px;
+    right: 0;
+    padding: 10px 0 10px 15px;
+    background-color: white;
+    font-size: 24px;
+    font-family: vazir;
+    color:crimson;
+}
+
+.contact-ways {
+    position: relative;
+    width: 90%;
+    border-top: 3px solid lightgray;
+    margin: 0 auto 20px auto;
+    padding-top: 30px;
+    direction: ltr;
+}
+
+.contact-ways span:first-of-type{
+    position: absolute;
+    top: -21px;
+    right: 0;
+    padding: 0 0 0 10px;
+    background-color: white;
+    font-size: 30px;
+}
+
+.contact-ways span:first-of-type i{
+    color: coral;
+}
+
+.contact-ways span {
+    font-size: 18px;
+}
+
+
+
+
+
+
+

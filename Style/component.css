@@ -1,0 +1,42 @@
+.fa-title {
+  font-size: 2em;
+  text-align: center;
+  height: fit-content;
+}
+.en-title {
+  font-family: monospace;
+  font-size: 1em;
+  text-align: center;
+}
+
+.btn {
+  background-color: royalblue;
+}
+.btn:hover {
+  background-color: goldenrod;
+}
+.social-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+.social-nav ul li {
+  display: inline-block;
+}
+.social-nav ul li i {
+  font-size: 1.5em;
+}
+.social-nav ul li i:hover {
+  font-size: 250%;
+}
+
+.title {
+  color: orangered;
+  font-size: 1.5em;
+  padding: 12px 0;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 2px solid darkgray;
+}

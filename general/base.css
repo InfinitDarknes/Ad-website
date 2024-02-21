@@ -1,0 +1,80 @@
+@font-face{
+    font-family: vazir;
+    src: url(../Fonts/vazir-font-v27.2.2-Fontjo.com/Vazir-Black.ttf) format(truetype);
+}
+
+@font-face{
+    font-family: yekan;
+    src: url(../Fonts/B_Yekan/Yekan.ttf) format(truetype);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: color .5s , background-color .5s , filter .5s , transform 1s , font-size .5s , rotate .5s;
+}
+
+span{
+    font-weight: 300;
+    display: block;
+}
+
+.label{
+    color: royalblue;
+    font-family: yekan;
+}
+
+.descryption span{
+        font-family: yekan;
+}
+
+a{
+    text-decoration: none;
+    color: royalblue;
+    font-family: yekan;
+}
+
+a:hover{
+    color: goldenrod;
+}
+
+input[type="submit"]:hover{
+    background-color: goldenrod;
+}
+
+li{
+    list-style-position: inside;
+}
+
+i{
+    color: gray;
+    vertical-align: middle;
+    padding-left: 8px;
+}
+
+i:hover{
+    color: royalblue;
+}
+
+img{
+    cursor:zoom-in;
+}
+
+button,li,a,input[type="submit"],input[type="checkbox"]{
+    cursor: pointer;
+}
+
+.text{
+    color: black;
+    font-family: yekan;
+}
+
+.brand{
+    color: goldenrod;
+    font-family: vazir;
+}
+
+.title{
+    color: orangered;
+    font-family: vazir;
+}

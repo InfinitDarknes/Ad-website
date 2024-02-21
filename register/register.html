@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../../../FontAwesome.Pro.6.1.2/Web/css/all.css">
+    <script src="register.js"></script>
+    <title>نام نویسی</title>
+</head>
+<body>
+
+    <section class="form-container">
+
+        <div class="logo-container">
+            <div class="logo-title">
+                <span class="fa-title brand">طلایه دار</span>
+                <span class="en-title">Talayedar</span>
+            </div>
+            <span id="register-text" >نام نویسی</span>
+        </div>
+
+        <div id="register-form-container">
+            <form name="register-form" action="#" id="register-form" target="">
+                <label for="email-input">رایانامه:</label>
+                <input type="email" id="email-input" placeholder="رایانامه" required>
+                <label for="password-input">گذرواژه:</label>
+                <input type="password" id="password-input" placeholder="گذرواژه" required minlength="8">
+                <label for="password-input">تکرار گذرواژه:</label>
+                <input type="password" id="repeat-password-input" placeholder="تکرار گذرواژه" required minlength="8">
+                <div class="terms">
+                    <label for="checkbox" class="text"><a href="#">با قوانین وبسایت طلایه دار موافق هستم</a></label>
+                    <input type="checkbox" id="terms-checkbox" required unchecked>
+                </div>
+                <div id="error-display"></div>
+                <input type="submit" value="نام نویسی" onclick="return PackUserData()">
+                <a href="#">بازیابی گذرواژه</a>
+                <a href="#">حساب کاربری دارید؟ ورود</a>
+            </form>            
+        </div>
+
+        <div id="confirm-email-form">
+            <form action="" class="confirm-email-form" target="">
+                <label for="email-confirmation-code-input">کد تایید:</label>
+                <input type="text" id="email-confirmation-code-input" placeholder="کد تایید رایانامه" required>
+                <div id="error-display"></div>
+                <input type="submit" value="تایید" onclick="ConfirmEmail()">
+            </form>            
+        </div>
+        
+        <section class="contact-ways">
+            <span>
+              <i class="fa fa-headset"></i>
+            </span>
+            <span>
+                <i class="fa fa-phone"></i>
+                09393605539
+            </span>
+            <span>
+                <i class="fa fa-mail-bulk"></i>
+                <a href="">support@talayedar.ir</a>
+            </span>
+            <span>
+                <i class="fab fa-telegram"></i>
+                <a href="">@TalayedarSupport</a>
+            </span>
+        </section>
+
+    </section>
+
+    
+</body>
+</html>

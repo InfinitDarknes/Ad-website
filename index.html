@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/main.css" />
+    <title>طلایه دار</title>
+  </head>
+  <body>
+    <section class="app">
+      <header id="header">
+        <h1 id="main-logo">طلایه دار</h1>
+
+        <button id="show-menu-button" onclick="showmenu()"><i class="fa fa-list"></i>منوی سایت</button>
+
+        <nav id="header-nav">
+          <ul id="header-ul">
+            <li class="header-li"><img src="Icons/HomeIcon.png" alt="" class="navbar-icon" /><a href="#" class="header-link">خانه</a></li>
+
+            <li class="header-li"><img src="Icons/AdsIcon.png" alt="" class="navbar-icon" /><a href="#" class="header-link">آگهی ها</a></li>
+
+            <li class="header-li sub">
+              <img src="Icons/CategoriesIcon.png" alt="" class="navbar-icon" /><a href="#" class="header-link">دسته بندی</a>
+              <ul class="sub-menu">
+                <li class="sub-menu-li"><a href="#" class="sub-menu-link">آهن</a></li>
+                <li class="sub-menu-li"><a href="#" class="sub-menu-link">آلومینیوم</a></li>
+                <li class="sub-menu-li"><a href="#" class="sub-menu-link">مس</a></li>
+                <li class="sub-menu-li"><a href="#" class="sub-menu-link">روی</a></li>
+                <li class="sub-menu-li"><a href="#" class="sub-menu-link">نیکل</a></li>
+                <li class="sub-menu-li"><a href="#" class="sub-menu-link">چدن</a></li>
+                <li class="sub-menu-li"><a href="#" class="sub-menu-link">برنج</a></li>
+              </ul>
+            </li>
+
+            <li class="header-li">
+              <img src="Icons/OrderIcon.png" alt="" class="navbar-icon" /><a href="order-form/order-form.html" class="header-link">ثبت سفارش</a>
+            </li>
+
+            <li class="header-li"><img src="Icons/ContactIcon.png" alt="" class="navbar-icon" /><a href="#" class="header-link">تماس با ما</a></li>
+
+            <li class="header-li"><img src="Icons/AboutIcon.png" alt="" class="navbar-icon" /><a href="#" class="header-link">درباره ما</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="row">
+        <aside>
+          <section id="sidebar-search" class="sidebar-item">
+            <div class="sidebar-header">
+              <img src="Icons/SearchIcon.png" alt="" class="sidebar-header-icon" />
+              <span class="sidebar-header-title">جستجوی آگهی</span>
+            </div>
+            <div id="search-input-container">
+              <input type="text" id="search-input" placeholder="جستجو" />
+              <button id="search-button"><img src="Icons/SearchIcon.png" alt="" id="search-button-icon" /></button>
+            </div>
+          </section>
+          <section id="sidebar-categories" class="sidebar-item">
+            <div class="sidebar-header">
+              <img src="Icons/CategoriesIcon.png" alt="" class="sidebar-header-icon" />
+              <span class="sidebar-header-title"> دسته بندی </span>
+            </div>
+            <nav class="side-nav">
+              <ul class="side-list">
+                <li class="side-li"><a href="#" class="side-link">آهن</a></li>
+                <li class="side-li"><a href="#" class="side-link">آلومینیوم</a></li>
+                <li class="side-li"><a href="#" class="side-link">مس</a></li>
+                <li class="side-li"><a href="#" class="side-link">روی</a></li>
+                <li class="side-li"><a href="#" class="side-link">نیکل</a></li>
+                <li class="side-li"><a href="#" class="side-link">چدن</a></li>
+                <li class="side-li"><a href="#" class="side-link">برنج</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section id="sidebar-about-us" class="sidebar-item">
+            <div class="sidebar-header">
+              <img src="Icons/AboutIcon.png" alt="" class="sidebar-header-icon" />
+              <span class="sidebar-header-title">اطلاعات شرکت</span>
+            </div>
+            <section class="sidebar-description">
+              <p class="sidebar-paragraph">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون
+                و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+              </p>
+              <h3 class="sidebar-h3">نشانی شرکت</h3>
+              <p class="sidebar-paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+              <h3 class="sidebar-h3">مدارک و اعتبارسنجی</h3>
+              <p class="sidebar-paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            </section>
+          </section>
+          <section id="sidebar-contact-us" class="sidebar-item">
+            <div class="sidebar-header">
+              <img src="Icons/ContactIcon.png" alt="" class="sidebar-header-icon" />
+              <span class="sidebar-header-title">ارتباط با ما</span>
+            </div>
+            <section class="sidebar-description">
+              <span class="sidebar-span">
+                تلفن ثابت :
+                <span id="static-phone" dir="ltr">021-543-6545</span>
+              </span>
+              <span class="sidebar-span">
+                همراه :
+                <span id="cell-phone" dir="ltr">0991 542 8752</span>
+              </span>
+              <span class="sidebar-span">
+                ایمیل
+                <span id="email" dir="ltr">talayedar@gmail.com</span>
+              </span>
+              <section id="sidebar-social-media">
+                <a href="#" class="social-media-icon-link">
+                  <img src="Icons/TelegramIcon.png" alt="" class="social-media-icon" />
+                </a>
+                <a href="#" class="social-media-icon-link">
+                  <img src="Icons/WhatsappIcon.png" alt="" class="social-media-icon" />
+                </a>
+                <a href="#" class="social-media-icon-link">
+                  <img src="Icons/InstageramIcon.png" alt="" class="social-media-icon" />
+                </a>
+              </section>
+            </section>
+          </section>
+        </aside>
+        <main>
+          <section id="ads-list-header">
+            <img id="ads-list-icon" src="Icons/AdsIcon.png" alt="" />
+            <h2 id="ads-list-title">لیست آگهی ها</h2>
+          </section>
+          <section id="ads-list">
+            <article class="ads-item" id="FeC-Y-1">
+              <section class="image-div">
+                <img src="Images/castiron.jpeg" class="item-image" alt="ضایعات نیکل" />
+              </section>
+              <h3 class="ad-title"><a href="#" class="ad-title-link">ضایعات میلگرد عمده</a></h3>
+              <section class="descryption">
+                <section class="ad-descryption-container">
+                  <img src="" alt="" class="ad-icon" />
+                  <span class="ad-location ad-descryption-value">شهر : یاسوج</span>
+                </section>
+                <section class="ad-descryption-container">
+                  <img src="" alt="" class="ad-icon" />
+                  <span class="ad-quantity ad-descryption-value">مقدار : 8 تن</span>
+                </section>
+                <section class="ad-descryption-container">
+                  <img src="" alt="" class="ad-icon" />
+                  <span class="ad-price ad-descryption-value">قیمت : 100,000,000 به ازای هر تن</span>
+                </section>
+              </section>
+              <button type="button" class="ad-btn">مشاهده آگهی</button>
+            </article>
+          </section>
+        </main>
+      </section>
+      <footer>
+        <section class="footer-column" id="logo-column">
+          <div class="footer-body-column" id="">
+            <span id="footer-logo">طلایه دار</span>
+          </div>
+        </section>
+        <section class="footer-column" id="footer-body">
+          <section class="footer-body-column" id="">
+            <span class="footer-body-column-title">لینک های مفید</span>
+            <ul class="footer-list">
+              <li class="footer-li"><a href="#" class="footer-link">صفحه اصلی</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">ثبت سفارش</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">آگهی ها</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">دسته بندی</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">درباره ما</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">تماس با ما</a></li>
+            </ul>
+          </section>
+          <section class="footer-body-column" id="">
+            <span class="footer-body-column-title">محصولات</span>
+            <ul class="footer-list">
+              <li class="footer-li"><a href="#" class="footer-link">آهن</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">آلومینیوم</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">مس</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">روی</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">نیکل</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">چدن</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">برنج</a></li>
+            </ul>
+          </section>
+          <section class="footer-body-column" id="">
+            <span class="footer-body-column-title">پل های ارتباطی</span>
+            <ul class="footer-list">
+              <li class="footer-li">
+                تلفن ثابت :
+                <span dir="ltr">021-543-6545</span>
+              </li>
+              <li class="footer-li">همراه : <span dir="ltr">0991 542 8752</span></li>
+              <li class="footer-li">ایمیل : <span dir="ltr"> talayedar@gmail.com</span></li>
+            </ul>
+          </section>
+          <section class="footer-body-column" id="">
+            <span class="footer-body-column-title">پشتیبانی</span>
+            <ul class="footer-list">
+              <li class="footer-li"><a href="#" class="footer-link">خدمات پس از فروش</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">استعلام سفارش</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">ثبت آگهی</a></li>
+            </ul>
+          </section>
+          <section class="footer-body-column" id="">
+            <span class="footer-body-column-title">اطلاعات شرکت</span>
+            <ul class="footer-list">
+              <li class="footer-li">
+                نشانی :
+                <span>لورم ایپسوم متن ساختگی </span>
+              </li>
+              <li class="footer-li">لورم ایپسوم متن ساختگی</li>
+              <li class="footer-li">لورم ایپسوم متن ساختگی</li>
+              <li class="footer-li">لورم ایپسوم متن ساختگی</li>
+            </ul>
+          </section>
+          <section class="footer-body-column" id="">
+            <span class="footer-body-column-title">شبکه های اجتماعی</span>
+            <ul class="footer-list">
+              <li class="footer-li"><a href="#" class="footer-link">تلگرام</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">واتساپ</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">اینستاگرام</a></li>
+              <li class="footer-li"><a href="#" class="footer-link">سروش</a></li>
+            </ul>
+          </section>
+          <section class="footer-body-column" id="enamad-column">
+            <a href="" id="enamad-link"><img src="Icons/Enamad.png" alt="" id="enamad-logo" /></a>
+          </section>
+        </section>
+        <section class="footer-column" id="footer-bottom">
+          <span>طلایه دار 1402-2024</span>
+        </section>
+      </footer>
+    </section>
+  </body>
+</html>
